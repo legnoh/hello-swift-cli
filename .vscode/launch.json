@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:hello-swift-cli}",
+            "name": "Debug hello-swift-cli",
+            "program": "${workspaceFolder:hello-swift-cli}/.build/debug/hello-swift-cli",
+            "preLaunchTask": "swift: Build Debug hello-swift-cli"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:hello-swift-cli}",
+            "name": "Release hello-swift-cli",
+            "program": "${workspaceFolder:hello-swift-cli}/.build/release/hello-swift-cli",
+            "preLaunchTask": "swift: Build Release hello-swift-cli"
+        }
+    ]
+}
