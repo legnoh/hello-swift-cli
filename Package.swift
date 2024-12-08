@@ -8,7 +8,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
-        .package(url: "https://github.com/swiftlang/swift-testing.git", from: "6.0.2"),
     ],
     targets: [
         .executableTarget(
