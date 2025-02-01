@@ -1,9 +1,15 @@
 name: ci
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '.github/**'
+      - '.vscode/**'
+      - 'LICENSE'
+      - 'README.md'
   pull_request:
-    branches:
-    - main
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -11,7 +17,7 @@ jobs:
     runs-on: macos-latest
     steps:
 
-      - name: Check Out Repo 
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Swift
